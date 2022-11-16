@@ -25,6 +25,9 @@ $\text{Stress}(P)= \sum_{\in E}w_{ij}(||P_i-P_j||-d_{ij})^2+\sum_{\in { V \choos
 <p align="center">
   <img src='./img/F-Stress.png' width=600 height=220>
 </p>
+<p align="center">
+  <img src='./img/S1.png' width=600 height=220>
+</p>
 
 **Sparse Stress Function:**
 
