@@ -10,7 +10,9 @@ where $\theta$ is the balance coefficient. The first item emphasizes the local s
 
 **Binary Stress Graph Drawing**
 
-<img src="/Users/lixue/Documents/GitHub/StressGNNs/img/B-Stress.png" alt="B-Stress" style="zoom:90%;" />
+<p align="center">
+  <img src='./img/B-Stress.png' width=600 height=250>
+</p>
 
 **Full Stress Function:**
 
@@ -20,7 +22,9 @@ $\text{Stress}(P)= \sum_{\in E}w_{ij}(||P_i-P_j||-d_{ij})^2+\sum_{\in { V \choos
 
 **Full Stress Graph Drawing**:
 
-<img src="/Users/lixue/Documents/GitHub/StressGNNs/img/F-Stress.png" alt="F-Stress" style="zoom:90%;" />
+<p align="center">
+  <img src='./img/F-Stress.png' width=600 height=250>
+</p>
 
 
 
