@@ -51,7 +51,7 @@ $\text{Sparse}(X)= \sum_{\in E}w_{ij}(||X_i-X_j||-d_{ij})^2+\sum_{i\in V}\sum_{p
 | **Pivot Selection** $(G(V={1,…,n},E),  m)$ <br>% This function finds $m$ pivots<br>    Choose node $p_1$ randomly from $V$<br/>    dist[1,…,n]$\leftarrow\infin$ % a distance recording list<br/>    **for** $i = 1$ to $m$ **do** <br>       % Compute the shortest path distance <br>       $\mathcal{D_{p_i*}}\leftarrow BFS(G(V,E),p_i)$<br>       **for every** $j\in V$<br>          dist[j]$\leftarrow$min{dist[j], $\mathcal{D_{j}}$ } <br>       **end for** <br>   %Choose next pivot<br>   $p_{i+1}\leftarrow$ arg max$_{j\in V}${dist[j]}<br>   **end for** <br>   **return** $p_1,p_2,...,p_m$ | **Anchor Selection** $(G(V={1,…,n},E),  t)$ <br> % This function finds $t$ anchor-sets<br>      Set anchor-size = $\text{int}(n/(2^{j+1}))$<br>                                 $,j=0,1,...,log_n-1$<br>      Each size is chosen for $clog_n$ times<br/>                                 $,c=0.5,1,...$<br>      Randomly sample $t=clog_n^2$ anchor-sets <br>                                 $,S=\{S_1,S_2,...S_t\}$<br>      **for** $i = 1$ to $t$ **do** <br/>          % Compute the shortest path distance <br/>         $\mathcal{D}_{S_i*}\leftarrow BFS(G(V,E),S_i)$<br>         Choose the closest anchor for each node<br>       **end for**<br>       **return** ($v$, $s$), $v\in V,s\in S_i$ |
 
 <p align="center">
-  <img src='./img/Pivot.png' width=800 height=190>
+  <img src='./img/pivot.png' width=800 height=190>
 </p>
 
 **Stress Iteration:**
