@@ -46,7 +46,7 @@ Position-aware GNNs v.s. Spase Repulsion GNNs:
 
 **Stress Iteration:**
 
-## $p_i = \frac{\sum_{j\ne i}w_{ij}(p_j+d_{ij}(\hat{p}_i-\hat{p}_j)\text{inv}(||P(t)_i-P(t)_j||))}{\sum_{j\ne i}w_{ij}}$
+$p_i = \frac{\sum_{j\ne i}w_{ij}(p_j+d_{ij}(\hat{p}_i-\hat{p}_j)\text{inv}(||P(t)_i-P(t)_j||))}{\sum_{j\ne i}w_{ij}}$
 
  The current message passing mechanism( $\sum_{j\ne i}w_{ij}p_{ij}$) in GNNs is only a small part of the stress Iteration. 
 
