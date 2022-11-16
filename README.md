@@ -2,6 +2,12 @@
 
 # Stress Graph Drawing Is All You Need!
 
+Graph layout by Stress Majorization:
+
+![Alt Text](https://github.com/Eigenworld/StressGNNs/blob/main/img/S!.gif?raw=true)
+
+![Alt Text](https://github.com/Eigenworld/StressGNNs/blob/main/img/S2.gif?raw=true)
+
 **Binary Stress Function:**
 
 $\text{B}(p)=\sum_{<i,j>\in E}||p_i-p_j||^2+\theta(||p_i-p_j||-1)^2$
@@ -25,10 +31,6 @@ $\text{Stress}(P)= \sum_{\in E}w_{ij}(||P_i-P_j||-d_{ij})^2+\sum_{\in { V \choos
 <p align="center">
   <img src='./img/F-Stress.png' width=600 height=220>
 </p>
-<p align="center">
-  <img src='./img/S1.png' width=600 height=220>
-</p>
-
 **Sparse Stress Function:**
 
   Ortmann et al. proposed the sparse stress function to reduce the high computations in the full stress method. They restrict the stress computation of each node $i$ to a set of representative nodes $\mathcal{P}$, from now on called pivots. The simplified stress function has the following form:
@@ -53,7 +55,7 @@ Position-aware GNNs v.s. Spase Repulsion GNNs:
   <img src='./img/formula.png' width=800 height=100>
 </p>
 
- The current message passing mechanism( $\sum_{j\ne i}w_{ij}p_{ij}$) in GNNs is only a small part of the stress Iteration. Our story starts at optimizing the stress iteration!
+ The current message passing mechanism( $\sum_{j\ne i}w_{ij}p_{ij}$) in GNNs is only a small part of the stress Iteration. **Our story starts at optimizing the stress iteration!**
 
 
 
