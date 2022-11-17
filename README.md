@@ -24,13 +24,14 @@ where $\theta$ is the balance coefficient. The first item emphasizes the local s
 
 $\text{Stress}(P)= \sum_{\in E}w_{ij}(||P_i-P_j||-d_{ij})^2+\sum_{\in { V \choose 2 }\backslash E}w_{ij}(||P_i-P_j||-d_{ij})^2$
 
- The first item is called attractive forces, which tend to shorten edges and maintain the compactness of connected nodes. Repulsive forces in the second item keep all nodes $V$ well separated. $d_{ij}$ is the shortest path distance.
+  The first item is called attractive forces, which tend to shorten edges and maintain the compactness of connected nodes. Repulsive forces in the second item keep all nodes $V$ well separated. $d_{ij}$ is the shortest path distance.
 
 **Full Stress Graph Drawing**:
 
 <p align="center">
   <img src='./img/F-Stress.png' width=600 height=220>
 </p>
+
 **Sparse Stress Function**:
 
   Ortmann et al. proposed the sparse stress function to reduce the high computations in the full stress method. They restrict the stress computation of each node $i$ to a set of representative nodes $\mathcal{P}$, from now on called pivots. The simplified stress function has the following form:
