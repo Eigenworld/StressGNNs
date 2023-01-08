@@ -2,6 +2,10 @@
 
 # Stress Graph Drawing Is All You Need!
 
+🪧Advertisement:: I am looking for a postdoctoral position!🎓  Direction: Explainable AI.🤖️
+
+My website: https://eigenworld.github.io
+
 Graph layout by Stress Majorization:
 
 ![Alt Text](https://github.com/Eigenworld/StressGNNs/blob/main/img/S!.gif?raw=true)
